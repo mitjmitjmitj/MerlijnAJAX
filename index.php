@@ -18,7 +18,7 @@ $_SESSION['articles_per_page'] = $_SESSION['articles_per_page'] ?? 0;
 <body>
 <h1>Voorbeeld voor Merlijn</h1>
 <div>Huidige breedte van window: <span id="count"></span></div>
-<div>Huidige waarde van de variabele $articles_per_page:
+<div>Huidige waarde van de variabele $_SESSION['articles_per_page']:
     <?php
     echo '<span id="articles">' . $_SESSION['articles_per_page'] . '</span>';
     ?>
