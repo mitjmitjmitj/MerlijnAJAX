@@ -9,3 +9,4 @@ if (isset($_GET['width'])) {
     // Teruggeven aan AJAX
     echo $_SESSION['articles_per_page'];
 }
+

@@ -14,7 +14,12 @@ function show_width_and_articles() {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("articles").innerHTML = this.responseText;
+            var aantal = this.responseText;
+            var divjes = '';
+            for (var i = 0 ; i < aantal ; i++) {
+                divjes += '<div>PLAATJE</div>';
+            }
+            document.getElementById("articles").innerHTML = divjes;
         }
     }
     request.open("GET","process.php?width=" + width,true);
